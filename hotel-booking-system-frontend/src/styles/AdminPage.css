@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+.admin-page {
+    min-height: 100vh;
+    padding: 32px;
+}
+
+.page-card {
+    max-width: 80%;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 32px;
+}
+
+.charges-cardG {
+    max-width: 50%;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 32px;
+
+}
+
+.small-card {
+    max-width: 700px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+    font-size: 2.2rem;
+}
+
+.page-header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+.action-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn,
+.remove-btn,
+.owner-btn--overview,
+.owner-btn--statement,
+.link-btn {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+.secondary-btn {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.secondary-btn:hover {
+    background: #d1d5db;
+}
+
+.remove-btn {
+    background: #ee1d1d;
+    color: white;
+}
+
+.remove-btn:hover {
+    background: #dc2626;
+}
+
+.owner-btn--overview {
+    background: #2563eb;
+    color: white;
+}
+
+.owner-btn--overview:hover {
+    background: #1d4ed8;
+}
+
+.owner-btn--statement {
+    background: #16a34a;
+    color: white;
+}
+
+.owner-btn--statement:hover {
+    background: #15803d;
+}
+
+.link-btn {
+    background: #111827;
+    color: white;
+}
+
+.link-btn:hover {
+    background: #000000;
+}
+
+.section-card {
+    margin-top: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.section-card h2 {
+    margin-top: 0;
+}
+
+.charges-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.charges-form label {
+    font-weight: 600;
+}
+
+.charges-form input {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.charges-form input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background: #f9fafb;
+    font-weight: 700;
+}
+
+tr:hover td {
+    background: #f9fbff;
+}
+
+.charges-card {
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+    padding: 40px;
+}
+
+.charges-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.charges-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.05;
+    color: #1e293b;
+}
+
+.charges-header p {
+    margin: 10px 0 0;
+    color: #64748b;
+    font-size: 1.15rem;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: #0f172a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+    background: #1e293b;
+    transform: translateY(-1px);
+}
+
+.charges-form-modern {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 10px;
+}
+
+.charges-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.charges-field label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.charges-field input {
+    width: 100%;
+    max-width: 420px;
+    padding: 14px 16px;
+    border: 1px solid #d5dbe3;
+    border-radius: 14px;
+    font-size: 1.05rem;
+    background: #f8fafc;
+    color: #0f172a;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.charges-field input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+.save-charges-btn {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 420px;
+    border: none;
+    border-radius: 14px;
+    padding: 15px 22px;
+    background: #2563eb;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.save-charges-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.save-charges-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.field-error {
+    color: red;
+}
+
+.owner-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.owner-overview-item {
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.owner-overview-label {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-bottom: 6px;
+}
+
+.owner-overview-value {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .charges-card {
+        padding: 24px;
+    }
+
+    .charges-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .charges-field input,
+    .save-charges-btn {
+        max-width: 100%;
+    }
+}

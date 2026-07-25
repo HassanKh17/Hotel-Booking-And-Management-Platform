@@ -1,0 +1,16 @@
+.hotels-page {
+    min-height: 100vh;
+    padding: 32px;
+}
+
+.error-text {
+    color: #dc2626;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    /* push everything to the right */
+    gap: 0.75rem;
+    /* space between buttons */
+}

@@ -1,0 +1,76 @@
+# =========================
+# GENERAL
+# =========================
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# =========================
+# FRONTEND (React)
+# =========================
+hotel-booking-system-frontend/node_modules/
+hotel-booking-system-frontend/.pnp
+hotel-booking-system-frontend/.pnp.js
+
+# Build outputs
+hotel-booking-system-frontend/build/
+hotel-booking-system-frontend/dist/
+hotel-booking-system-frontend/coverage/
+
+# =========================
+# BACKEND (Spring Boot / Java)
+# =========================
+target/
+build/
+.gradle/
+uploads/
+# Compiled files
+*.class
+
+# Packaged files
+*.jar
+*.war
+
+# Maven wrapper (optional keep/remove depending on team)
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# NETBEANS (optional)
+# =========================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# =========================
+# ALLOW SRC BUILDS (keep this)
+# =========================
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+HotelManagementSystemBackend/.metadata/
+HotelManagementSystemBackend/.sonarlint/
+HotelManagementSystemBackend/.classpath
+HotelManagementSystemBackend/.project
+HotelManagementSystemBackend/.settings

@@ -1,0 +1,38 @@
+.hotel-photo {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.hotel-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.hotel-title h1 {
+    margin: 0;
+}
+
+.star-rating {
+    color: #f59e0b;
+    font-size: 1.4rem;
+}
+
+.hotel-address {
+    color: #6b7280;
+    margin-top: 8px;
+}
+
+.special-offer {
+    display: inline-block;
+    margin-top: 12px;
+    background: #dcfce7;
+    color: #16a34a;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+}

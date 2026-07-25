@@ -1,0 +1,135 @@
+.owner-statement-page {
+    padding: 32px;
+    background: #f3f4f6;
+    min-height: 100vh;
+}
+
+.owner-statement-page__header {
+    margin-bottom: 24px;
+}
+
+.owner-statement-page__header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #1f2937;
+}
+
+.owner-statement-page__header p {
+    margin: 8px 0 0;
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+.owner-statement-page__summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.owner-statement-page__summary-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.owner-statement-page__summary-card strong {
+    display: block;
+    margin-top: 8px;
+    font-size: 1.15rem;
+    color: #111827;
+    word-break: break-word;
+}
+
+.owner-statement-page__summary-card--balance strong {
+    color: #047857;
+}
+
+.owner-statement-page__label {
+    display: block;
+    font-size: 0.88rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.owner-statement-page__card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 24px 28px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.owner-statement-page__table-header {
+    margin-bottom: 18px;
+}
+
+.owner-statement-page__table-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #1f2937;
+}
+
+.owner-statement-page__table-wrapper {
+    overflow-x: auto;
+}
+
+.owner-statement-page__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.owner-statement-page__table th,
+.owner-statement-page__table td {
+    text-align: left;
+    padding: 16px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: middle;
+}
+
+.owner-statement-page__table th {
+    font-size: 0.95rem;
+    color: #111827;
+    font-weight: 700;
+    background: #f9fafb;
+}
+
+.owner-statement-page__table td {
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+.owner-statement-page__amount {
+    font-weight: 700;
+}
+
+.owner-statement-page__amount--negative {
+    color: #b91c1c;
+}
+
+.owner-statement-page__amount--positive {
+    color: #047857;
+}
+
+.owner-statement-page__empty,
+.owner-statement-page__status {
+    margin: 0;
+    color: #6b7280;
+}
+
+.owner-statement-page__error {
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+@media (max-width: 900px) {
+    .owner-statement-page__summary-grid {
+        grid-template-columns: 1fr;
+    }
+}

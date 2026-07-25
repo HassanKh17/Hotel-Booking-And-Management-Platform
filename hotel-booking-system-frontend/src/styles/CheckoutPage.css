@@ -1,0 +1,257 @@
+.checkout-page {
+    min-height: 100vh;
+    background: #f4f7fb;
+    padding: 32px 20px;
+}
+
+.checkout-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.checkout-header {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 28px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.checkout-header h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+    color: #111827;
+}
+
+.checkout-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* Card-style sections for Summary and Payment */
+.checkout-section-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+    border: 1px solid #edf1f6;
+    height: 100%;
+}
+
+.checkout-section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Table styling to match the clean look */
+.checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.checkout-table th {
+    text-align: left;
+    color: #6b7280;
+    font-weight: 600;
+    padding: 12px 8px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.checkout-table td {
+    padding: 14px 8px;
+    border-bottom: 1px solid #f8fafc;
+    color: #1f2937;
+}
+
+/* Grand Total Section */
+.checkout-total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    padding: 16px 20px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #eef2f7;
+}
+
+.checkout-total-label {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.checkout-total-amount {
+    font-size: 22px;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Payment Method Tabs */
+.payment-tabs {
+    display: flex;
+    gap: 8px;
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.payment-tab {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.payment-tab.active {
+    background: #ffffff;
+    color: #111827;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Saved Card Pills */
+.saved-card-pill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #ffffff;
+    border: 2px solid #eef2f7;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.saved-card-pill.selected {
+    border-color: #3b82f6;
+    background: #eff6ff;
+}
+
+.saved-card-pill .card-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-align: left;
+}
+
+.saved-card-pill .card-icon {
+    color: #94a3b8;
+}
+
+.saved-card-pill.selected .card-icon {
+    color: #1d4ed8;
+}
+
+.saved-card-pill .card-name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1e293b;
+}
+
+.saved-card-pill .card-details {
+    margin: 2px 0 0;
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* Radio Indicator */
+.radio-indicator {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #cbd5e1;
+    border-radius: 50%;
+    position: relative;
+}
+
+.saved-card-pill.selected .radio-indicator {
+    border-color: #3b82f6;
+    background: #3b82f6;
+}
+
+.saved-card-pill.selected .radio-indicator::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* Form Inputs */
+.pf-input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background: #f8fafc;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.pf-input:focus {
+    outline: none;
+    border-color: #1d4ed8;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+}
+
+/* Submit Button */
+.pf-submit {
+    background: #1d4ed8;
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.pf-submit:hover {
+    background: #1e40af;
+}
+
+.pf-submit:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* Back button style from bookings page */
+.co-back-btn {
+    border: none;
+    background: #ffffff;
+    color: #1f2937;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    margin-bottom: 16px;
+}

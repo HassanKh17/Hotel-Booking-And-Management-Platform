@@ -1,0 +1,103 @@
+/* Page background */
+.hotel-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.hotel-page__card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Header */
+.hotel-page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* Title */
+.hotel-page__title {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #1f2937;
+}
+
+/* Buttons */
+.hotel-btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.hotel-btn--primary {
+  background: #2563eb;
+  color: white;
+}
+
+.hotel-btn--primary:hover {
+  background: #1d4ed8;
+}
+
+.hotel-btn--secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.hotel-btn--secondary:hover {
+  background: #d1d5db;
+}
+
+/* Search input */
+.hotel-search {
+  margin-bottom: 20px;
+}
+
+.hotel-search input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+/* Hotel list */
+.hotel-list {
+  display: grid;
+  gap: 16px;
+}
+
+/* Individual hotel card */
+.hotel-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  background: #ffffff;
+  transition: box-shadow 0.2s ease;
+}
+
+.hotel-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Actions */
+.hotel-card__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Empty state */
+.hotel-empty {
+  color: #6b7280;
+}

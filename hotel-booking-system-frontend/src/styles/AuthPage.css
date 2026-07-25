@@ -1,0 +1,213 @@
+/* ─── Layout ─────────────────────────────────────────────── */
+.auth-wrapper {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: authBgFadeIn 0.3s ease forwards;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+    padding: 32px;
+    animation: authFadeIn 0.2s ease;
+}
+
+.auth-heading {
+    margin: 0 0 24px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    text-align: center;
+}
+
+/* ─── Tabs ────────────────────────────────────────────────── */
+.auth-tabs {
+    display: flex;
+    gap: 4px;
+    background: #f3f4f6;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 28px;
+}
+
+.auth-tab {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6b7280;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.auth-tab.active {
+    background: #ffffff;
+    color: #111827;
+    box-shadow: 0 1px 4px rgba(15, 23, 42, 0.1);
+}
+
+.auth-tab:hover:not(.active) {
+    color: #374151;
+}
+
+/* ─── Form fields ─────────────────────────────────────────── */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.auth-field label {
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.9rem;
+}
+
+.auth-field input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: #ffffff;
+    color: #111827;
+}
+
+.auth-field input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.auth-field input::placeholder {
+    color: #9ca3af;
+}
+
+/* ─── Feedback ────────────────────────────────────────────── */
+.auth-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.875rem;
+    margin-bottom: 12px;
+}
+
+.auth-success {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #15803d;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.875rem;
+    margin-bottom: 12px;
+}
+
+/* ─── Submit button ───────────────────────────────────────── */
+.auth-submit {
+    width: 100%;
+    margin-top: 4px;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.auth-submit:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.auth-submit:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ─── Switch link ─────────────────────────────────────────── */
+.auth-switch {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.auth-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #2563eb;
+    font-size: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.auth-link:hover {
+    color: #1d4ed8;
+}
+
+/* ─── Footer ──────────────────────────────────────────────── */
+.auth-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin-bottom: 0;
+}
+
+/* ─── Animation ───────────────────────────────────────────── */
+@keyframes authBgFadeIn {
+    from { background: rgba(15, 23, 42, 0); }
+    to   { background: rgba(15, 23, 42, 0.15); }
+}
+
+@keyframes authFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.auth-card--centered {
+    text-align: center;
+}
+
+.auth-error-code {
+    font-size: 4rem;
+    margin-bottom: 8px;
+}
+
+.auth-error-message {
+    color: #6b7280;
+    margin-bottom: 24px;
+}
